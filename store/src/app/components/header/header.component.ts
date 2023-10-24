@@ -7,7 +7,7 @@ import { CartService } from "src/app/services/cart.service";
   templateUrl: "./header.component.html",
 })
 export class HeaderComponent {
-  private _cart: Cart = { items: [] };
+  public _cart: Cart = { items: [] };
   itemsQuantity = 0;
   @Input()
   get cart(): Cart {
